@@ -188,17 +188,67 @@ console.log(sum);
 // }
 
 // console.log(filterValue);
-arr.filter(currentValue,index,arr)=> {})
-const filterVal = arr.filter((val) => val < 4);
-console.log(filterVal);
+// arr.filter(currentValue,index,arr)=> {})
+// const filterVal = arr.filter((val) => val < 4);
+// console.log(filterVal);
 
-const MaxValue = arr.reduce((prevValue, currentValue) => {
-  return prevValue < currentValue ? prevValue : currentValue;
-}, Number.MAX_VALUE);
+// const MaxValue = arr.reduce((prevValue, currentValue) => {
+//   return prevValue < currentValue ? prevValue : currentValue;
+// }, Number.MAX_VALUE);
 
-console.log(MaxValue);
-if (a < 10) {
-  //
-  console.log("a is less than 10");
-} else {
+// console.log(MaxValue);
+// if (a < 10) {
+//   //
+//   console.log("a is less than 10");
+// } else {
+// }
+
+// function helloworld(msg) {
+//   return msg;
+// }
+// const sum1 = (a, b) => {
+//   return a + b;
+// };
+// console.log(sum1(1, 2));
+// const helloworld = (msg) => msg;
+
+// // const hello = function () {
+// //   console.log("hello");
+// // };
+// // hello();
+
+// // const hello = () => {
+// //   console.log("Hello");
+// // };
+
+// const hello = () => console.log("Hello");
+
+// console.log(helloworld("Hello World"));
+// const msg = helloworld("Hi World");
+// console.log(msg);
+
+// const sum1 = (a, b) => a + b;
+// const subs = (a, b) => b - a;
+
+// const HigherFunction = (a, b, cb) => {
+//   const val = cb(a, b);
+//   return val;
+// };
+
+// console.log(HigherFunction(2, 3, sum1));
+// console.log(HigherFunction(2, 3, subs));
+
+function Counter() {
+  let count = 0;
+  return function (element = 1) {
+    count += element;
+    return count;
+  };
 }
+
+const count = Counter();
+console.log(count());
+console.log(count(3));
+console.log(count(5));
+
+console.log(count()); //1
