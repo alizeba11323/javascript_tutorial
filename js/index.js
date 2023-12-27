@@ -66,10 +66,28 @@
 
 // // console.log(c12 instanceof Car);
 
-// function sayHello(msg) {
+// function sayHello(msg = "Welcome To Javascript World !") {
 //   return msg;
 // }
-
+// console.log(sayHello());
+// console.log(sayHello("Hello World "));
+// function defination
+// function sayHello() {
+//   console.log("Say Hello");
+//   //   return undefined
+//   //   return "Say Hello";
+// }
+// function invoke
+// console.log(sayHello());
+// const message = sayHello();
+// console.log(message);
+// parameters function
+// function sayHelloWithParam(msg) {
+//   console.log(msg);
+// }
+// //arguments
+// sayHelloWithParam("Hello World");
+// sayHelloWithParam("Welcome To Javascript world");
 // var msg = sayHello("Hello Javascript");
 // console.log(msg);
 // sayHello("Hello Php"); // argument
@@ -79,12 +97,14 @@
 // }
 // // ... rest operator
 // function add(...val) {
-//   var sum = 0;
-//   for (var i = 0; i < val.length; i++) {
-//     sum += val[i];
-//   }
-//   return sum;
+//     var sum = 0;
+//     for (var i = 0; i < val.length; i++) {
+//       sum += val[i];
+//     }
+//     return sum;
 // }
+
+// add(1, 2, 3, 4, 5, 6, 7, 8);
 
 // console.log(add(1));
 // console.log(add(1, 2));
@@ -105,70 +125,70 @@
 //     return this["first name"] + " " + this["last name"];
 //   },
 // };
-// console.log(person.fullName());
-// // console.log(person["age"]);
-// // console.log(person.age);
-// // console.log(person["home address"]["city"]);
+// // console.log(person.fullName());
+// // // console.log(person["age"]);
+// // // console.log(person.age);
+// // // console.log(person["home address"]["city"]);
 
-// // const per
+// // // const per
 
-// const name = "name10 10 11";
-// const name1 = "name12";
-// const arr = [1, 2, 3];
-// console.log(name.length);
-// console.log(name.slice(2, 4));
-// console.log(name.substring(2, 4));
-// console.log(name.substr(2, 3));
-// // substring();
-// // substr()
+// // const name = "name10 10 11";
+// // const name1 = "name12";
+// // const arr = [1, 2, 3];
+// // console.log(name.length);
+// // console.log(name.slice(2, 4));
+// // console.log(name.substring(2, 4));
+// // console.log(name.substr(2, 3));
+// // // substring();
+// // // substr()
 
-// // phone number = /[0-9]{10}$/
-// // username = /[A-Z a-z] *\s{2} [A-za-z]{2}*/
+// // // phone number = /[0-9]{10}$/
+// // // username = /[A-Z a-z] *\s{2} [A-za-z]{2}*/
 
-// var newName = name.replace(/10/g, "11");
-// console.dir(name);
-// console.log(newName);
-// console.log(name.toLowerCase());
+// // var newName = name.replace(/10/g, "11");
+// // console.dir(name);
+// // console.log(newName);
+// // console.log(name.toLowerCase());
 
-// const nameConCat = name.concat(" ", name1);
-// console.log(nameConCat);
-// console.log(name.trimEnd());
-// console.log(name.charCodeAt(1));
-// console.log(name.split(" "));
-// console.log(arr.join(" "));
-// console.log(name.indexOf("10", 6));
-// console.log(name.lastIndexOf("10"));
-// console.log(name.includes("11", 6));
-// console.log(name.startsWith("1", 10));
-// console.log(name.endsWith("0"));
-// var x = 4;
-// var str = x.toString();
-// parseInt(str);
-// console.log(y);
-var c = 10;
-{
-  let a = 10;
-  a = 20;
-  c = 30;
-  const b = 10;
-  console.log(a, b, c);
-}
-console.log(c);
+// // const nameConCat = name.concat(" ", name1);
+// // console.log(nameConCat);
+// // console.log(name.trimEnd());
+// // console.log(name.charCodeAt(1));
+// // console.log(name.split(" "));
+// // console.log(arr.join(" "));
+// // console.log(name.indexOf("10", 6));
+// // console.log(name.lastIndexOf("10"));
+// // console.log(name.includes("11", 6));
+// // console.log(name.startsWith("1", 10));
+// // console.log(name.endsWith("0"));
+// // var x = 4;
+// // var str = x.toString();
+// // parseInt(str);
+// // console.log(y);
+// var c = 10;
+// {
+//   let a = 10;
+//   a = 20;
+//   c = 30;
+//   const b = 10;
+//   console.log(a, b, c);
+// }
+// console.log(c);
 
-const arr = [18, 12, 23, 4];
-const counter = arr.reduce((prevcount, currentValue) => {
-  return prevcount + currentValue;
-}, 0);
-console.log(counter);
+// const arr = [18, 12, 23, 4];
+// const counter = arr.reduce((prevcount, currentValue) => {
+//   return prevcount + currentValue;
+// }, 0);
+// console.log(counter);
 
-arr.forEach((value, index, arr) => {
-  console.log(value, index);
-});
-var sum = 0;
-for (var i = 0; i < arr.length; i++) {
-  sum += arr[i];
-}
-console.log(sum);
+// arr.forEach((value, index, arr) => {
+//   console.log(value, index);
+// });
+// var sum = 0;
+// for (var i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum);
 
 // const arrDouble = [];
 
@@ -222,7 +242,11 @@ console.log(sum);
 // // };
 
 // const hello = () => console.log("Hello");
-
+// const hello = () => console.log("Hello World");
+// const SayHello = (cb) => {
+//   cb();
+// };
+// SayHello(hello);
 // console.log(helloworld("Hello World"));
 // const msg = helloworld("Hi World");
 // console.log(msg);
@@ -238,17 +262,124 @@ console.log(sum);
 // console.log(HigherFunction(2, 3, sum1));
 // console.log(HigherFunction(2, 3, subs));
 
-function Counter() {
-  let count = 0;
-  return function (element = 1) {
-    count += element;
-    return count;
-  };
-}
+// function Counter() {
+//   let count = 0;
+//   return function (element = 1) {
+//     count += element;
+//     return count;
+//   };
+// }
 
-const count = Counter();
-console.log(count());
-console.log(count(3));
-console.log(count(5));
+// const count = Counter();
+// console.log(count(3));
+// console.log(count(10));
+// console.log(count());
+// console.log(count(3));
+// console.log(count(5));
 
-console.log(count()); //1
+// console.log(count()); //1
+
+// use for function
+
+// apply call and bind
+
+// const user = {
+//   firstName: "First Name",
+//   lastName: "Last Name",
+//   age: 20,
+//   gender: "Male",
+// };
+
+// const employee = {
+//   firstName: "Employee One",
+//   lastName: "Employeee Two",
+// };
+
+// const fullName = function (surname) {
+//   return surname + " " + this.firstName + " " + this.lastName;
+// };
+
+// console.log(fullName.call(user, "Mr"));
+// console.log(fullName.call(employee, "Ms"));
+
+// const numbers = {
+//   a: 1,
+//   b: 1,
+// };
+
+// function sum(c, d) {
+//   return this.a + this.b + c + d;
+// }
+
+// // console.log(sum.call(numbers, 3, 4));
+// // console.log(sum.apply(numbers, [3, 4]));
+// // apply
+
+// const sumBind = sum.bind(numbers);
+// console.log(sumBind(3, 4));
+// +
+// setTimeout
+// setInterval
+// const a = 10;
+// const b = 20;
+// let sum = 0;
+// setTimeout(() => {
+//   sum = a + b;
+//   console.log(sum);
+// }, 3000);
+
+// setInterval(() => {
+//   const d = new Date();
+//   console.log(d);
+//   document.getElementById("para").innerHTML =
+//     d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+// }, 1000);
+
+// console.log(Math.floor(Math.random() * 200));
+// const heading = document.getElementById("heading");
+// heading.innerHTML = "<h3 style='display:none'>Hello world Updated...</h3>";
+
+// console.log(heading.innerHTML);
+
+// const navbar = document.getElementsByClassName("navbar");
+// navbar[0].style.backgroundColor = "orange";
+// navbar[0].style.padding = "10px";
+// console.log(navbar);
+
+// const navItems = document.getElementsByClassName("nav-item");
+// // const newA = Array.from(navItems);
+// // console.log(newA.);
+// for (let i = 0; i < navItems.length; i++) {
+//   navItems[i].style.listStyle = "none";
+// }
+
+// const liItems = document.getElementsByTagName("li");
+// console.log(liItems);
+
+const singleNavItem = document.querySelector(".nav-item");
+// singleNavItem.style.background = "green";
+// singleNavItem.style.color = "white";
+// singleNavItem.style.padding = "15px";
+const nav = document.querySelector(".navbar");
+nav.style.background = "#cec";
+nav.style.display = "flex";
+nav.style.justifyContent = "center";
+nav.style.gap = "10px";
+nav.style.padding = "10px";
+const liItems = document.querySelectorAll(".nav-item");
+Array.from(liItems).forEach((nav) => {
+  nav.style.listStyle = "none";
+});
+console.log(liItems);
+console.log(document.title);
+document.title = "New Title";
+console.log(document.title);
+console.log(document.domain);
+console.log(document.URL);
+console.log(document.doctype);
+console.log(document.head);
+console.log(document.body);
+// console.log(document.all);
+document.forms[0].style.background = "red";
+console.log(document.links);
+console.log(document.images);
